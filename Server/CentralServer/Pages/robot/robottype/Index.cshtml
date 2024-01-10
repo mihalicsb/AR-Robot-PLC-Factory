@@ -1,0 +1,33 @@
+﻿@page
+@model ManagementWebServer.Pages.robot.robottpye.IndexModel
+
+@{
+    ViewData["Title"] = "Robot típusok";
+}
+
+<p>
+    <a class="btn btn-primary" asp-page="Create">Új hozzádaása</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RobotType[0].Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.RobotType) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@item.Id">Módosít</a>
+                <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@item.Id">Töröl</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

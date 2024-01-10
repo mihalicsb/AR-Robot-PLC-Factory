@@ -1,0 +1,106 @@
+﻿@page
+@model ManagementWebServer.Pages.robot.IndexModel
+
+@{
+    ViewData["Title"] = "Robotok";
+}
+
+<p>
+    <a class="btn btn-primary" asp-page="Create">Új hozzádaása</a>
+    <a class="btn btn-primary" asp-page="/robot/factory/Index">Gyárak</a>
+    <a class="btn btn-primary" asp-page="/robot/robottype/Index">Robot típusok</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Alias)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].SystemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].HostName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Version)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Virtual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Xpos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Ypos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].ZOrinetation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Factory.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Robot[0].Type.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Robot) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alias)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SystemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HostName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                    @{
+                        var @virt = item.Virtual > 0 ? "Virtuális" : "Valós";
+                        @Html.DisplayFor(modelItem => @virt);
+                    }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Xpos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ypos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZOrinetation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Factory.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type.Name)
+            </td>
+            <td>
+                <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@item.Guid">Módosít</a>
+                </td>
+            <td>
+                <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@item.Guid">Töröl</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

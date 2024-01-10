@@ -1,0 +1,96 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CentralServer
+build_property.RootNamespace = CentralServer
+build_property.ProjectDir = C:\Users\Balint\source\VisualStudio\Diploma\CentralServer\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Balint\source\VisualStudio\Diploma\CentralServer
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/ioport/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcaW9wb3J0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/ioport/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcaW9wb3J0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/ioport/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcaW9wb3J0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/ioport/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcaW9wb3J0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/plc/ioport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xwbGNcaW9wb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/robot/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xyb2JvdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/robot/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xyb2JvdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/robot/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xyb2JvdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/robot/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xyb2JvdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/devices/robot/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV2aWNlc1xyb2JvdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Balint/source/VisualStudio/Diploma/CentralServer/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v6u5upvvzm

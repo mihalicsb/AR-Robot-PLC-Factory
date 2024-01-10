@@ -1,0 +1,64 @@
+﻿@page
+@model ManagementWebServer.Pages.robot.EditModel
+
+@{
+    ViewData["Title"] = "Robot módosítása:";
+}
+
+<h4>@ViewData["Title"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Robot.Guid" />
+            <input type="hidden" asp-for="Robot.Address" />
+            <input type="hidden" asp-for="Robot.Name" />
+            <input type="hidden" asp-for="Robot.SystemName" />
+            <input type="hidden" asp-for="Robot.HostName" />
+            <input type="hidden" asp-for="Robot.Version" />
+            <input type="hidden" asp-for="Robot.Virtual" />
+            <div class="form-group">
+                <label asp-for="Robot.Alias" class="control-label"></label>
+                <input asp-for="Robot.Alias" class="form-control" />
+                <span asp-validation-for="Robot.Alias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Robot.Xpos" class="control-label"></label>
+                <input type="" asp-for="Robot.Xpos" class="form-control" />
+                <span asp-validation-for="Robot.Xpos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Robot.Ypos" class="control-label"></label>
+                <input asp-for="Robot.Ypos" class="form-control" />
+                <span asp-validation-for="Robot.Ypos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Robot.ZOrinetation" class="control-label"></label>
+                <input asp-for="Robot.ZOrinetation" class="form-control" />
+                <span asp-validation-for="Robot.ZOrinetation" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Robot.Type.Name" class="control-label"></label>
+                <select asp-for="Robot.TypeId" class ="form-control" asp-items="ViewBag.TypeId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Robot.Factory.Name" class="control-label"></label>
+                <select asp-for="Robot.FactoryId" class ="form-control" asp-items="ViewBag.FactoryId"></select>
+            </div>
+            <div class="form-group">
+                <br/>
+                <input type="submit" value="Mentés" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <br/>
+    <a class="btn btn-secondary" asp-page="./Index">Mégsem</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

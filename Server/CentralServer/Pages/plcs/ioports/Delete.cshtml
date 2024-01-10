@@ -1,0 +1,27 @@
+﻿@page
+@model ManagementWebServer.Pages.plcs.ioports.DeleteModel
+
+@{
+    ViewData["Title"] = "I/O törlése";
+}
+
+
+<h3>Biztosan törölni szeretné ezt a I/O portot?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IoPort.Name)
+        </dt>
+                <dd class="col-sm-10">
+            @Html.DisplayFor(model =>  model.IoPort.Name)
+        </dd>
+
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="IoPort.Id" />
+        <input type="submit" value="Törlés" class="btn btn-danger" />
+        <a class="btn btn-secondary" asp-page="./Index">Mégsem</a>
+    </form>
+</div>

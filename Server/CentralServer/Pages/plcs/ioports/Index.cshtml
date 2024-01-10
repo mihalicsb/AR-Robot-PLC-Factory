@@ -1,0 +1,67 @@
+﻿@page
+@model ManagementWebServer.Pages.plcs.ioports.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<p>
+    <a class="btn btn-primary" asp-page="Create">Új hozzádaása</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IoPort[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IoPort[0].Direction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IoPort[0].Offset)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IoPort[0].Bit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IoPort[0].Value)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IoPort[0].Plc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.IoPort) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                    @{
+                        var in_or_out = item.Direction > 0 ? "Kimenet" : "Bemenet";
+                        @Html.DisplayFor(modelItem => in_or_out);
+                    }
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Offset)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Value)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Plc.Name)
+            </td>
+            <td>
+                <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@item.Id">Módosít</a>
+                <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@item.Id">Töröl</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

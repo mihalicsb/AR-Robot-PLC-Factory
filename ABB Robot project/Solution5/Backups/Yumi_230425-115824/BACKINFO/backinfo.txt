@@ -1,0 +1,55 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: C:\Users\Balint\Documents\RobotStudio\Virtual Controllers\TEMP\2c93a032-9c96-43d4-8f69-ec84d1d0ac3b\backup.650589
+# 2023-04-25  11:58:24
+#
+>>SYSTEM_ID:
+VIRTUAL_USE
+
+>>PRODUCTS_ID:
+RobotWare Version: 6.13.01.00
+SmartGripper Version: 3.56.0000.00
+
+  Contact L
+  Leadthrough
+  YuMi AbsAcc Recovery
+  812-1 Production Manager
+  637-1 Production Screen
+  English
+  613-1 Collision Detection
+  709-1 DeviceNet Master/Slave
+  841-1 EtherNet/IP Scanner/Adapter
+  617-1 FlexPendant Interface
+  604-1 MultiMove Coordinated
+  623-1 Multitasking
+  RobotWare Base
+  Hall Sensor Calibration
+  Drive System IRB 14000
+  IRB 14000-0.5/0.5
+  IRB 14000-0.5/0.5
+  IRB 14000-0.5/0.5
+  SmartGripper
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+PROC.cfg
+MMC.cfg
+EIO.cfg
+SIO.cfg
+MOC.cfg
+
+
+>>TASK1: (T_ROB_R,,)
+PROGMOD\Modul1.mod @ 
+SYSMOD\user.sys @ 
+
+>>TASK2: (T_ROB_L,,)
+SYSMOD\user.sys @ 
+PROGMOD\Modlu1.mod @ 
+
+
+>>EOF:

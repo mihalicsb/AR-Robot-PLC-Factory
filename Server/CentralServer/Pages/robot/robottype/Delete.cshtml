@@ -1,0 +1,25 @@
+﻿@page
+@model ManagementWebServer.Pages.robot.robottpye.DeleteModel
+
+@{
+    ViewData["Title"] = "Robot típus törlése";
+}
+
+<h3>Biztosan törölni szeretné ez a robot típust?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RobotType.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RobotType.Name)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="RobotType.Id" />
+        <input type="submit" value="Törlés" class="btn btn-danger" /> 
+        <a class="btn btn-secondary" asp-page="./Index">Mégsem</a>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Grid="false" Separator="true">
+  <Apps>
+    <App>
+      <Name>Setup</Name>
+      <SystemApp>true</SystemApp>
+      <Index>1</Index>
+      <Assembly>ProductionManagerSetup.dll</Assembly>
+      <Type>ABB.Robotics.Processes.Gap.ProductionManagerSetup</Type>
+      <Image>PrdMgr_Setup.jpg</Image>
+      <AlertSignal />
+      <ErrorSignal />
+      <InData />
+    </App>
+    <App>
+      <Name>Service</Name>
+      <SystemApp>true</SystemApp>
+      <Index>2</Index>
+      <Assembly>ProductionManagerService.dll</Assembly>
+      <Type>ABB.Robotics.Processes.Gap.ProductionManagerService</Type>
+      <Image>PrdMgr_Service.jpg</Image>
+      <AlertSignal />
+      <ErrorSignal />
+      <InData />
+    </App>
+    <App>
+      <Name>Info</Name>
+      <SystemApp>true</SystemApp>
+      <Index>3</Index>
+      <Assembly>ProductionManagerInformation.dll</Assembly>
+      <Type>ABB.Robotics.Processes.Gap.ProductionManagerInformation</Type>
+      <Image>PrdMgr_Information.jpg</Image>
+      <AlertSignal />
+      <ErrorSignal />
+      <InData />
+    </App>
+    <App>
+      <Name>Part</Name>
+      <SystemApp>true</SystemApp>
+      <Index>4</Index>
+      <Assembly>ProductionManagerPartHandler.dll</Assembly>
+      <Type>ABB.Robotics.Processes.Gap.ProductionManagerPartHandler</Type>
+      <Image>PrdMgr_Handling.jpg</Image>
+      <AlertSignal />
+      <ErrorSignal />
+      <InData />
+    </App>
+  </Apps>
+  <Widgets />
+  <WidgetPages>
+    <Page>Page 1</Page>
+    <Page>Page 2</Page>
+    <Page>Page 3</Page>
+  </WidgetPages>
+</ProjectSettings>

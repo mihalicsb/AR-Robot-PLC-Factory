@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a8db42c5-4f82-49e3-91b0-40e83471d950": {
+      "ProjectGuid": "a8db42c5-4f82-49e3-91b0-40e83471d950",
+      "DisplayName": "ManagementWebServer",
+      "ColorIndex": 0
+    },
+    "6dd550c3-8047-4d9c-852a-a1e2c2f8a536": {
+      "ProjectGuid": "6dd550c3-8047-4d9c-852a-a1e2c2f8a536",
+      "DisplayName": "DataServer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

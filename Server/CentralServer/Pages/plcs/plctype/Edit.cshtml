@@ -1,0 +1,36 @@
+﻿@page
+@model ManagementWebServer.Pages.plcs.plctype.EditModel
+
+@{
+    ViewData["Title"] = "PLC típus módosítása";
+}
+
+
+<h4>@ViewData["Title"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PlcType.Id" />
+            <div class="form-group">
+                <label asp-for="PlcType.Name" class="control-label"></label>
+                <input asp-for="PlcType.Name" class="form-control" />
+                <span asp-validation-for="PlcType.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <br/>
+                <input type="submit" value="Mentés" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <br/>
+    <a class="btn btn-secondary" asp-page="./Index">Mégsem</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
